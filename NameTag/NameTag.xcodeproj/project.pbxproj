@@ -22,6 +22,7 @@
 		8386A4AF1BF3907100C79566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8386A4B21BF3907100C79566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8386A4B41BF3907100C79566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8386A4BA1BF392A300C79566 /* NameTag.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NameTag.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				8386A4AF1BF3907100C79566 /* Assets.xcassets */,
 				8386A4B11BF3907100C79566 /* LaunchScreen.storyboard */,
 				8386A4B41BF3907100C79566 /* Info.plist */,
+				8386A4BA1BF392A300C79566 /* NameTag.playground */,
 			);
 			path = NameTag;
 			sourceTree = "<group>";
