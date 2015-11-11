@@ -17,7 +17,7 @@ let context = UIGraphicsGetCurrentContext()
 
 // Draw our beautiful name tag
 
-// Fill it with white so the preview looks good.  Or pick any color that won't use lots of printer ink.  ☺️
+// Fill it with white so the preview looks good.  Or pick a light color that won't use lots of printer ink.  ☺️
 CGContextSetFillColorWithColor(context, UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0).CGColor)
 CGContextFillRect(context, imageRect)
 
@@ -30,7 +30,7 @@ let borderRect = CGRectInset(imageRect, 60.0, 60.0)
 CGContextSetStrokeColorWithColor(context, UIColor.purpleColor().CGColor)
 
 // Create a bezier path for the border
-let bezierPath = UIBezierPath(roundedRect: borderRect, cornerRadius: 60.0)
+let bezierPath = UIBezierPath(roundedRect: borderRect, cornerRadius: 75.0)
 bezierPath.lineWidth = 18.0
 bezierPath.stroke()
 
@@ -45,6 +45,7 @@ let name = "Chris Garrett" as NSString
 let paragraphStyle = NSMutableParagraphStyle()
 paragraphStyle.alignment = .Center
 
+// Create a dictionary of text attributes
 let textAttributes = [
     NSFontAttributeName: font,
     NSForegroundColorAttributeName: UIColor.blackColor(),
@@ -56,7 +57,18 @@ nameRect.size.height = 240.0
 nameRect.origin.y = 120.0
 name.drawInRect(nameRect, withAttributes: textAttributes)
 
+let info = "I ❤️ 🐶🐱⛷🚴 and ⛵️" as NSString
 
+var infoRect = nameRect
+infoRect.origin.y = 600.0
+
+let infoAttributes = [
+    NSFontAttributeName: UIFont.systemFontOfSize(120.0),
+    NSForegroundColorAttributeName: UIColor.blackColor(),
+    NSParagraphStyleAttributeName: paragraphStyle
+]
+
+info.drawInRect(infoRect, withAttributes: infoAttributes)
 
 
 
